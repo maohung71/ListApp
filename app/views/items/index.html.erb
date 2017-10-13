@@ -6,6 +6,9 @@
       <li class ='List'>
         <h1><%= link_to i.name, item_path(i) %></h1>
         <h2><%= link_to i.description, item_path(i) %></h2>
+        <p><%= link_to 'Edit', edit_list_path(i) %></p>
+        <p><%= link_to 'Delete', i, method: :delete, data: { confirm: 'Are you sure?' } %></p>
+
       </li>
     <% end %>
   </ul>

@@ -19,7 +19,7 @@ class ListsController < ApplicationController
 
     respond_to do |format|
       if @list.save
-        format.html { redirect_to root_path, notice: 'list was successfully created.' }
+        format.html { redirect_to lists_path, notice: 'list was successfully created.' }
         format.json { render :show, status: :created, location: @list }
       else
         format.html { render :new }

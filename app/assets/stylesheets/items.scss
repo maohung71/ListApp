@@ -3,8 +3,8 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 .container{
-  margin: 0 auto;
-  text-align: center;
+  // margin: 0 auto;
+  // text-align: center;
 }
 .itemscontainer{
   // border: 1px solid red;
@@ -37,6 +37,14 @@ padding: 2em;
 border: 1px solid grey;
 border-radius: 1%;
 }
+
+.crudbutton {
+  // border: 1px solid red;
+  display: inline-block;
+  flex-direction: row;
+
+}
+
 
 
 

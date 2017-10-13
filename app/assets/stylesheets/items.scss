@@ -38,11 +38,12 @@ border: 1px solid grey;
 border-radius: 1%;
 }
 
-.crudbutton {
-  // border: 1px solid red;
+
+.btn p {
   display: inline-block;
   flex-direction: row;
-
+  font-size: 1.2em;
+  padding: .2em;
 }
 
 

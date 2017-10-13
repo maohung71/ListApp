@@ -11,7 +11,7 @@ class ItemsController < ApplicationController
 
   def new
     @item = Item.new
-    # @list = @item.list
+    @categories = Category.all
   end
 
   def create
@@ -23,10 +23,10 @@ class ItemsController < ApplicationController
     respond_to do |format|
       if @item.save
         format.html { redirect_to @item, notice: 'item was successfully created.' }
-        format.json { render :show, status: :created, location: @item }
+
       else
+        @categories = Category.all
         format.html { render :new }
-        format.json { render json: @item.errors, status: :unprocessable_entity }
       end
     end
   end
@@ -53,7 +53,7 @@ class ItemsController < ApplicationController
   private
 
   def item_params
-    params.require(:item).permit(:name, :description)
+    params.require(:items).permit(:name, :description, :category_id)
   end
 
   def find_item

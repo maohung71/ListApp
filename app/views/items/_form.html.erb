@@ -1,0 +1,12 @@
+<h1>Items#form</h1>
+<p>Find me in app/views/items/form.html.erb</p>
+
+<div class = "form">
+  <%= simple_form_for @item do |f| %>
+    <%= f.input :name, label: "Item Name"%>
+    <%= f.input :description %>
+
+    <%= f.button :submit %>
+  <% end %>
+</div>
+

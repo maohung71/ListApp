@@ -1,3 +1,42 @@
 // Place all the styles related to the Items controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.container{
+  margin: 0 auto;
+  text-align: center;
+}
+.itemscontainer{
+  // border: 1px solid red;
+  width: 70%;
+  padding: 0;
+  margin: 0 auto;
+}
+
+.List{
+  border: 1px solid blue;
+  margin: 1em auto;
+  padding: 0;
+}
+
+.itemscontainer ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+
+}
+
+.itemscontainer ul li a {
+  text-decoration: none;
+}
+
+.form, .userForm{
+width: 50%;
+margin: 0 auto;
+padding: 2em;
+border: 1px solid grey;
+border-radius: 1%;
+}
+
+
+

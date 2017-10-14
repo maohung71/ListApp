@@ -39,23 +39,8 @@
         <% end %>
       </ul>
 
+      <!-- drop down for lists -->
 
-      <ul class="nav navbar-nav">
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown"
-          role="button" aria-expanded="false">Sort <span class="caret"></span>
-        </a>
-        <ul class="dropdown-menu" role="menu">
-          <% Category.all.each do |category| %>
-            <li class="<% 'active' if params[:category] == category
-            .subject%>">
-              <%= link_to category.subject, list_items_path(category.subject), class: "link" %>
-            </li>
-          <% end %>
-        </ul>
-        </li>
-
-      </ul>
 
 
 

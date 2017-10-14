@@ -3,22 +3,18 @@
 <p>LIST ITEM PATH</p>
 
 <div class="itemscontainer">
-
-  <%= link_to 'Add New items ', new_list_item_path , class: 'crudbutton'%>
+  <%= link_to 'Add New items ', new_item_path , class: 'crudbutton'%>
   <ul>
     <% @items.each do |i| %>
       <li class ='List'>
-        <h2><%= link_to i.name, list_item_path(i) %></h2>
+        <h2><%= link_to i.name, item_path(i) %></h2>
         <p><%= link_to i.category.subject %></p>
-        <p><%= link_to i.description, list_item_path(i) %></p>
+        <p><%= link_to i.description, item_path(i) %></p>
         <div class ='btn'>
-          <p><%= link_to 'Edit', edit_list_path(i) %></p>
-          <p><%= link_to 'Delete', i, method: :delete, data: { confirm: 'Are you sure?' } %></p>
+          <p><%= link_to 'Edit', edit_item_path(i) %></p>
+
         </div>
       </li>
     <% end %>
   </ul>
-
-
-  <%= link_to 'Add New ', new_item_path %>
 </div>

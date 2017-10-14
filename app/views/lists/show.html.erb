@@ -1,43 +1,22 @@
+<h1>LeVEL 2 Items Collection</h1>
 <h1>Lists#show</h1>
 <p>Find me in app/views/lists/show.html.erb</p>
 
-<h2><%= @list.name %></h2>
-<p><%= @list.description  %></p>
-
 
 <div class="itemscontainer">
-<h1>hello</h1>
-
-
-
+  <%= link_to 'Add New items ', new_item_path , class: 'crudbutton'%>
   <ul>
     <% @items.each do |i| %>
       <li class ='List'>
-        <h2><%= link_to i.name, list_items_path(i) %></h2>
+        <h2><%= link_to i.name, item_path(i) %></h2>
         <p><%= link_to i.category.subject %></p>
-        <p><%= link_to i.description, list_items_path(i) %></p>
+        <p><%= link_to i.description, item_path(i) %></p>
         <div class ='btn'>
+          <p><%= link_to 'Edit', edit_item_path(i) %></p>
 
         </div>
       </li>
     <% end %>
   </ul>
-
-
-
-
-
-
-
 </div>
 
-
-
-
-
-
-
-
-<%= link_to 'Home', lists_path %>
-<%= link_to 'Edit', edit_list_path(@list) %>
-<%= link_to 'Delete', list_path(@list), method: :delete, data: { confirm: 'Are you sure?' } %>

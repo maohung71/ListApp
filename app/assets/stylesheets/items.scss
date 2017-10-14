@@ -3,26 +3,16 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 .container{
-  // margin: 0 auto;
-  // text-align: center;
+  margin: 0 auto;
+  text-align: center;
 }
 .itemscontainer{
-  // border: 1px solid red;
-  width: 70%;
-  padding: 0;
+  border: 1px solid cyan;
+  text-align: center;
+  padding: 1em;
   margin: 0 auto;
+  width: 80%;
 }
-
-.List{
-  border: 1px solid blue;
-  margin: 1.6em auto 0;
-  padding: .6em 1em;
-}
-.List p{
-  margin: .6em auto;
-  font-size: 1.2em;
-}
-
 
 .btn p {
   display: inline-block;

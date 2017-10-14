@@ -2,21 +2,26 @@
 <h1>Lists#show</h1>
 <p>Find me in app/views/lists/show.html.erb</p>
 
+<%= link_to 'Add New items ', new_item_path , class: 'crudbutton'%>
+<div class="listShow">
+  <% @items.each do |i| %>
+  <div class="row" id ="listSingle">
+    <div class="col-md-12 itemPhoto">photo</div>
+    <div class="col-md-12">
+      <ul>
+        <li class ='list'>
+          <h2><%= link_to i.name, item_path(i) %></h2>
+          <p><%= link_to i.category.subject %></p>
+          <p><%= link_to i.description, item_path(i) %></p>
+          <div class ='btn'>
+            <p><%= link_to 'Edit', edit_item_path(i) %></p>
 
-<div class="itemscontainer">
-  <%= link_to 'Add New items ', new_item_path , class: 'crudbutton'%>
-  <ul>
-    <% @items.each do |i| %>
-      <li class ='List'>
-        <h2><%= link_to i.name, item_path(i) %></h2>
-        <p><%= link_to i.category.subject %></p>
-        <p><%= link_to i.description, item_path(i) %></p>
-        <div class ='btn'>
-          <p><%= link_to 'Edit', edit_item_path(i) %></p>
-
-        </div>
-      </li>
-    <% end %>
-  </ul>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <% end %>
 </div>
+
 

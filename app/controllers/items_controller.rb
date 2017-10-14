@@ -3,10 +3,17 @@ class ItemsController < ApplicationController
   before_action :find_item, only: [:show, :edit, :update, :destroy]
 
   def index
-    @items = Item.all.order("created_at DESC")
+
+    if params[:category].blank?
+      @items = Item.all.order("created_at DESC")
+    else
+      @category_id = Category.find_by(subject: params[:category]).id
+      @items = Item.where(:category_id => @category_id).order("created_at DESC")
+    end
   end
 
   def show
+    @product = Product.find(params[:id])
   end
 
   def new

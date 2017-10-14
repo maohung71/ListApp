@@ -7,13 +7,13 @@ class ListsController < ApplicationController
   end
 
   def show
-    # @items = @list.items
+    @items = @list.items
   end
 
   def new
     # @list = current_user.list.build
     @list = List.new
-    @categories = Category.all.map{ |c| [c.subject, c.id ] }
+    # @categories = Category.all.map{ |c| [c.subject, c.id ] }
   end
 
   def create

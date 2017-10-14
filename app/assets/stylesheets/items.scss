@@ -15,8 +15,25 @@
 
 .List{
   border: 1px solid blue;
-  margin: 1em auto;
-  padding: 0;
+  margin: 1.6em auto 0;
+  padding: .6em 1em;
+}
+.List p{
+  margin: .6em auto;
+  font-size: 1.2em;
+}
+
+
+.btn p {
+  display: inline-block;
+  flex-direction: row;
+  font-size: 1.2em;
+  padding: 0 .6em 0 0;
+}
+
+.crudbutton{
+  font-size: 1.2em;
+  border: 1px solid red;
 }
 
 .itemscontainer ul {
@@ -39,12 +56,6 @@ border-radius: 1%;
 }
 
 
-.btn p {
-  display: inline-block;
-  flex-direction: row;
-  font-size: 1.2em;
-  padding: .2em;
-}
 
 
 

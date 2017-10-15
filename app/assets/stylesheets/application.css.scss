@@ -13,6 +13,78 @@
  *= require_tree .
  *= require_self
  */
+#body-custom{
+  background-color: #123e6b;
+  color: white;
+ }
+
+
+#navbar-white {
+  background-color: white;
+  border-color: #E7E7E7;
+  border-radius: 0;
+  height: 4em;
+  font-size: 1.2em;
+  padding-top: .5em;
+}
+
+#navbar-white a {
+  font-weight: bold;
+  color: #123e6b;
+}
+
+#navbar-white a:hover {
+  font-weight: bold;
+  color: grey;
+}
+
+.form, .userForm{
+width: 50%;
+margin: 0 auto;
+padding: 2em;
+border: 1px solid grey;
+border-radius: 1%;
+background-color: #b4e3ed;
+color: #153f6a;
+font-size: 1.2em;
+font-weight: 1.2em;
+}
+
+.label{
+  color: #153f6a;
+}
+.text_field{
+  padding: .3em;
+  width: 80%;
+
+}
+
+.form-actions{
+  font-size: 2em;
+  padding: .4em;
+}
+
+
+.crudForm label{
+  color: #153f6a;
+  display: block;
+  padding: .4em;
+}
+
+.addButton{
+  display: block;
+  margin: 1em auto;
+  padding: .4em;
+}
+
+
+
+
+
+
+
+
+
 
  @import "bootstrap-sprockets";
  @import "bootstrap";

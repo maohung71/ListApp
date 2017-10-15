@@ -1,23 +1,22 @@
-<h1>Items#form</h1>
-<p>Find me in app/views/items/form.html.erb</p>
+<div class = "form crudForm">
 
-<div class = "form">
- <%= form_tag :action => 'create' do %>
+  <%= form_tag :action => 'create' do %>
+    <label for = "item_name">Name</label>
+    <%= text_field 'items', 'name' , class: 'text_field'%>
 
-<p><label for = "item_name">name</label>
-<%= text_field 'items', 'name' %></p>
+    <label for = "item_description">Description</label>
+    <%= text_field 'items', 'description' , class: 'text_field'%>
 
-<p><label for = "item_description">description</label>
-<%= text_field 'items', 'description' %></p>
+    <label for = "item_category_id">Category</label>
+    <%= collection_select(:items, :category_id, @categories, :id, :subject, prompt: true) %>
 
-<p><label for = "item_category_id">Category</label>
-<%= collection_select(:items, :category_id, @categories, :id, :subject, prompt: true) %></p>
+    <%= submit_tag "Add", class: 'addButton' %>
+  <% end -%>
 
-<%= submit_tag "Create" %>
-
-<% end -%>
-
-<%= link_to 'Back to List', {:action => 'index'} %>
+  <%= link_to 'Back to List', {:action => 'index'} %>
 
 </div>
+
+<h1>Items#form</h1>
+<p>Find me in app/views/items/form.html.erb</p>
 

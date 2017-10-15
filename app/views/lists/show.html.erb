@@ -1,12 +1,10 @@
-<h1>LeVEL 2 Items Collection</h1>
-<h1>Lists#show</h1>
-<p>Find me in app/views/lists/show.html.erb</p>
 
-<%= link_to 'Add New items ', new_item_path , class: 'crudbutton'%>
 <div class="listShow">
   <% @items.each do |i| %>
   <div class="row" id ="listSingle">
-    <div class="col-md-12 itemPhoto">photo</div>
+    <div class="col-md-12 listPhoto">
+    <img class="photo" src=<%= i.photo %> />
+    </div>
     <div class="col-md-12">
       <ul>
         <li class ='list'>
@@ -23,5 +21,11 @@
   </div>
   <% end %>
 </div>
+
+<%= link_to 'Add New items ', new_item_path , class: 'crudbutton'%>
+
+<h1>LeVEL 2 Items Collection</h1>
+<h1>Lists#show</h1>
+<p>Find me in app/views/lists/show.html.erb</p>
 
 

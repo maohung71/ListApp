@@ -6,12 +6,14 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:300,400,400i,700|Oleo+Script" rel="stylesheet">
+
   </head>
   <body id="body-custom">
     <nav id="navbar-white" class="navbar navbar-default navbar-custom">
      <div class="container">
       <div class="navbar-header">
-        <%= link_to "Home", lists_path, class: "navbar-brand" %>
+        <%= link_to "Collectors Home", lists_path, class: "navbar-brand" %>
       </div>
 
       <!-- conditional sign-in -->
@@ -42,6 +44,7 @@
       <!-- drop down for lists -->
 
       <ul class="nav navbar-nav">
+        <% if user_signed_in? %>
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown"
           role="button" aria-expanded="false">Collections <span class="caret"></span>
@@ -52,6 +55,7 @@
               .name%>">
                 <%= link_to it.name, list_path(it.name), class: "link" %>
               </li>
+            <% end %>
             <% end %>
           </ul>
         </li>
@@ -64,7 +68,7 @@
      </div>
     </nav>
 
-
+<div class="bigcircle"></div>
     <div class="container">
       <p class="notice"><%= notice %></p>
       <p class="alert"><%= alert %></p>

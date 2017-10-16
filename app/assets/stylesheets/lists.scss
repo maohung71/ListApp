@@ -2,16 +2,6 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-// .bigcircle{
-//   width: 1200px;
-//   height: 1200px;
-//   border-radius: 50%;
-//   background-color: white;
-//   position: absolute;
-//   left: -300px;
-//   top: -300px;
-// }
-
 
 .listscontainer{
   background-color: white;
@@ -31,27 +21,66 @@
   padding: 1em;
 }
 
-.listShow ul {
+.listShow ul, .collection ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
 
-.listShow ul li a {
+.listShow ul li a, .collection ul li a {
   text-decoration: none;
+  background-color: #e5f0ef;
+
+}
+
+.listheader {
+  border: 1px solid red;
+
 }
 
 
 .collection{
-  border: 1px solid red;
+  background-color: #e5f0ef;
   margin:  2em auto;
-  background-color: lightgrey;
+ }
+
+ .collectPhoto img{
+  max-width: 98%;
+  margin-left: 7em;
+  margin-top: 2em;
+  // border: 1px solid red;
  }
 
  .listPhoto{
+  // border: 1px solid red;
   padding: 0;
   margin:0;
  }
+
+ .list{
+  font-family: 'Merriweather Sans', sans-serif;
+  padding: 1em 0 0 1em;
+  text-align: left;
+  color: #ed4b3a;
+}
+
+.list h3{
+  color: #ed4b3a;
+  font-weight: 400;
+  font-style: italic;
+  padding-left: .5em;
+}
+
+.list h2{
+  color: #ed4b3a;
+  font-weight: 700;
+}
+
+.list p{
+  margin: .6em auto;
+  padding: 0 .5em;
+  font-size: 1.4em;
+}
 
 .listPhoto img, .showPhoto img {
   max-width: 100%;
@@ -68,31 +97,10 @@
 
 .listSingle .list{
   text-align: left;
-  border: 1px solid red;
+  // border: 1px solid red;
   padding: 0;
 }
 
-.list{
-  padding: 1em;
-  text-align: left;
-  //border: 1px solid blue;
-}
-
-.list h2{
-  padding-left: .5em;
-}
-
-.list p{
-  margin: .6em auto;
-  padding: 0 1em;
-  font-size: 1.4em;
-}
-
- .collectPhoto{
-  // background: #ffffff url("http://res.cloudinary.com/ga-mao/image/upload/v1506348785/vb4qug1bpbpf7drdglqe.jpg") no-repeat center center;
-  background-color: lightblue;
-  height: 230px;
- }
 
 
 

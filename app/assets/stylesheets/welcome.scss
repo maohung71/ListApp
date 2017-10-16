@@ -3,16 +3,47 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 .welcome{
-  margin: 1em auto;
+  margin: 0em 0em 0em 48em;
   text-align: center;
-  width: 50%
+  width: 50%;
 
+  // background-color: white;
 }
+
+.welcome h1{
+  font-family: 'Oleo Script', cursive;
+  font-size: 10em;
+  color: #fed030;
+}
+
 .icons .col-md-4{
   text-align: center;
-  padding: 0;
-  height:100px;
+  padding: .5em .5em;
+  // border: 1px solid red;
 
-  border: 2px solid red;
+
 }
+
+.icon img{
+  max-width: 100%;
+  padding: 0;
+  // border: 1px solid red;
+
+}
+
+.bigcircle{
+  width: 75em;
+  height: 75em;
+  border-radius: 50%;
+  background: #e0e0e0 url("http://res.cloudinary.com/ga-mao/image/upload/v1508109410/project4/icons_all.png")  no-repeat center center;
+  background-size: 70%;
+  // background-color: #9abfbc;
+  position: absolute;
+  left: -200px;
+  top: -100px;
+    z-index: -1;
+}
+
+
+
 

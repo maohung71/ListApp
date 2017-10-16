@@ -58,9 +58,28 @@ a:hover{
 
 .itemShow{
   background-color: white;
-  border: 1px solid cyan;
   text-align: left;
   padding: 1em;
+  font-family: 'Merriweather Sans', sans-serif;
+
+}
+
+.itemShow h2{
+  color: #ed4b3a;
+  font-weight: bold;
+  margin-top: 2em;
+}
+
+.itemShow h3{
+  color: #ed4b3a;
+  font-style: italic;
+  font-weight: 400;
+}
+
+.itemShow p{
+  font-size: 1.4em;
+  color: #153f6a;
+  font-weight: 400;
 }
 
 
@@ -69,13 +88,10 @@ a:hover{
   padding: .2em;
   margin: 1em .4em;
   display: inline-block;
-  border: 1px solid red;
+
 
 }
 
-.crudForm{
-  background-color: red;
-}
 
 
 

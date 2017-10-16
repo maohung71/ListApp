@@ -8,8 +8,8 @@
     <div class="col-md-12">
       <ul>
         <li class ='list'>
-          <h2><%= link_to i.name, item_path(i) %></h2>
-          <p><%= link_to i.category.subject %></p>
+          <h2 id ="listheader"><%= link_to i.name, item_path(i) %></h2>
+          <h3><%= link_to i.category.subject %></h3>
           <p><%= link_to i.description, item_path(i) %></p>
           <div class ='btn'>
             <p><%= link_to 'Edit', edit_item_path(i) %></p>

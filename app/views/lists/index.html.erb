@@ -1,9 +1,11 @@
-<div class="bigcircle"></div>
+
 <div class="listscontainer">
     <% @lists.each do |l| %>
       <div class="row collection">
-        <div class="col-md-3 collectPhoto">image goes here</div>
-        <div class="col-md-9">
+        <div class="col-md-2 collectPhoto">
+          <img src="http://res.cloudinary.com/ga-mao/image/upload/v1508109414/project4/icons_new1.png" alt="icon1">
+        </div>
+        <div class="col-md-9 col-md-offset-1">
          <ul>
           <li class ='list'>
             <h2><%= link_to l.name, list_path(l) %></h2>
@@ -20,7 +22,6 @@
 </div>
 
 
-<h1>LeVEL 1 ALL COLLECTION</h1>
-<h1>Lists#index</h1>
+<%= link_to 'Add New items ', new_item_path , class: 'crudbutton'%>
 
 

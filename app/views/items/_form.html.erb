@@ -7,8 +7,6 @@
     <label for = "item_description">Description</label>
     <%= text_field 'items', 'description' , class: 'text_field'%>
 
-    <label for = "item_category_id">Category</label>
-    <%= collection_select(:items, :category_id, @categories, :id, :subject, prompt: true) %>
 
     <%= submit_tag "Add", class: 'addButton' %>
   <% end -%>
@@ -17,6 +15,6 @@
 
 </div>
 
-<h1>Items#form</h1>
-<p>Find me in app/views/items/form.html.erb</p>
+<!-- <h1>Items#form</h1>
+<p>Find me in app/views/items/form.html.erb</p> -->
 

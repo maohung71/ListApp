@@ -3,7 +3,7 @@ class ListsController < ApplicationController
   before_action :find_list, only: [:show, :edit, :update, :destroy]
 
   def index
-    @lists = List.all.order("created_at DESC")
+    @lists = List.all
   end
 
   def show
@@ -11,7 +11,6 @@ class ListsController < ApplicationController
   end
 
   def new
-    # @list = current_user.list.build
     @list = List.new
     # @categories = Category.all.map{ |c| [c.subject, c.id ] }
   end

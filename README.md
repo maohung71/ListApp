@@ -1,25 +1,57 @@
-# README
+# Project4_CollectionsApp
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
 
-Things you may want to cover:
+###Concept
 
-* Ruby version
+- A site for people who collects things. 
+- Database will have users, lists, items, categories table.
+- User will be able to upload and keep track of all their collections.
 
-* System dependencies
+## Wireframes ###
 
-* Configuration
+#### Landing Page ###
+![Landing page](assets-proposal/Landing.png)
 
-* Database creation
 
-* Database initialization
+#### Home Page ###
+![Landing page](assets-proposal/Home.png)
 
-* How to run the test suite
 
-* Services (job queues, cache servers, search engines, etc.)
+#### Collection ###
+![Landing page](assets-proposal/Collection.png)
 
-* Deployment instructions
+#### List Page ###
+![Landing page](assets-proposal/List.png)
 
-* ...
-# ListApp
+
+##Website Navigation
+
+-Welcome page
+-Log in
+-List page(list all the collection)
+ will be able to add, edit and delete collection
+-Item page(list all the items in a collection)
+ will be able to show, add, edit and delete the single collection
+
+
+
+###Project will have two crud functioanlites.
+
+- Phase 1 CRUD APPLICAION with create, edit, and delete functionality.
+- Implement filestack image API
+
+
+###Technologies Used
+
+- Ruby on Rails
+- Bootstrap
+- HTML & CSS
+
+
+###Unsolved problems
+
+- Not all funtionalities are working
+- API (post-MVP): Didn't get to implement filestack api
+
+
+

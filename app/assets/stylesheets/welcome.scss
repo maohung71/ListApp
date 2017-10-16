@@ -3,6 +3,8 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 .welcome{
+  // position: absolute;
+  // right: 0;
   margin: 0em 0em 0em 48em;
   text-align: center;
   width: 50%;
@@ -19,16 +21,24 @@
 .icons .col-md-4{
   text-align: center;
   padding: .5em .5em;
-  // border: 1px solid red;
+}
 
+#userlogin a, .formlogin{
+  font-family: 'Merriweather Sans', sans-serif;
+  font-weight: bold;
+  color: #9abfbc;
+}
 
+.formlogin{
+  font-family: 'Merriweather Sans', sans-serif;
+  font-weight: bold;
+  color: #153f6a;
+  margin-bottom: 1em;
 }
 
 .icon img{
   max-width: 100%;
   padding: 0;
-  // border: 1px solid red;
-
 }
 
 .bigcircle{
@@ -44,6 +54,8 @@
     z-index: -1;
 }
 
-
+.container .notice{
+  font: 2em;
+}
 
 

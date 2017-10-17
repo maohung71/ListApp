@@ -24,13 +24,9 @@ class ItemsController < ApplicationController
   def create
     @item = Item.new(item_params)
 
-    # @hobby = Hobby.find(params[:hobby_id])
-    # @item = @hobby.items.new(item_params)
-
     respond_to do |format|
       if @item.save
         format.html { redirect_to @item, notice: 'item was successfully created.' }
-
       else
         @categories = Category.all
         format.html { render :new }

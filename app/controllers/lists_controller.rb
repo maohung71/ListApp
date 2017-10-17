@@ -12,7 +12,7 @@ class ListsController < ApplicationController
 
   def new
     @list = List.new
-    # @categories = Category.all.map{ |c| [c.subject, c.id ] }
+    @categories = Category.all.map{ |c| [c.subject, c.id ] }
   end
 
   def create
@@ -30,6 +30,12 @@ class ListsController < ApplicationController
       end
     end
   end
+
+  # def create
+  #   @list = List.new(list_params)
+  #   @list.save
+  #   redirect_to lists_path
+  # end
 
   def edit
     @categories = Category.all.map{ |c| [c.subject, c.id ] }
@@ -54,7 +60,7 @@ class ListsController < ApplicationController
   private
 
   def list_params
-    params.require(:list).permit(:name, :description, :category_id)
+    params.require(:list).permit(:user_id, :name, :description, :category_id )
   end
 
   def find_list

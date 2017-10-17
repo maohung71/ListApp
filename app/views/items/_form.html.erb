@@ -7,6 +7,9 @@
     <label for = "item_description">Description</label>
     <%= text_field 'items', 'description' , class: 'text_field'%>
 
+    <label for = "item_category_id">Category</label>
+    <%= collection_select(:items, :category_id, @categories, :id, :subject, prompt: true) %>
+
 
     <%= submit_tag "Add", class: 'addButton' %>
   <% end -%>

@@ -3,7 +3,7 @@
 
 ###Concept
 
-- A site for people who collects things. 
+- A site for people who collects things, keep track of their collections.
 - Database will have users, lists, items, categories table.
 - User will be able to upload and keep track of all their collections.
 
